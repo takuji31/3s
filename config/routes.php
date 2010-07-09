@@ -29,4 +29,5 @@
  */
 	Router::connect('/', array('controller' => 'studies', 'action' => 'index'));
 	Router::connect('/my/', array('controller' => 'studies', 'action' => 'my'));
+	Router::connect('/my', array('controller' => 'studies', 'action' => 'my'));
 

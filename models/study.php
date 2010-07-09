@@ -4,6 +4,16 @@ class Study extends AppModel {
 	var $displayField = 'name';
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
+	var $belongsTo = array(
+		'User' => array(
+			'className' => 'User',
+			'foreignKey' => 'user_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+
 	var $hasMany = array(
 		'Slide' => array(
 			'className' => 'Slide',
@@ -11,7 +21,7 @@ class Study extends AppModel {
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
-			'order' => 'Slide.page asc',
+			'order' => '',
 			'limit' => '',
 			'offset' => '',
 			'exclusive' => '',

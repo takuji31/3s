@@ -12,10 +12,10 @@ a:hover,a:active{
 	text-decoration:underline;
 }
 table{
-	width:840px;
+	width:890px;
 	border-collapse: collapse;
 	border:1px solid #005BA6;
-	margin:  30px;
+	margin:  10px;
 }
 th,td{
 	border:1px solid #005BA6;

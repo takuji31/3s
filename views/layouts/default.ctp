@@ -38,6 +38,8 @@
   <div id="global_menu">
     <ul>
       <li id="current"><?= $html->link("Top","/",array('title'=>'Top')) ?></li>
+      <li id="current"><?= $html->link("MyPage","/my/",array('title'=>'MyPage')) ?></li>
+      <li id="current"><?= $html->link("Register","/users/add",array('title'=>'Registar')) ?></li>
       <li id="current"><?= $html->link("Login","/users/login",array('title'=>'Login')) ?></li>
     </ul>
   </div>
