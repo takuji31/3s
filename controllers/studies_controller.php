@@ -5,7 +5,7 @@ class StudiesController extends AppController {
     public $helpers = array('Html','Form','Javascript','Text');
 
 
-    public function index(){
+    public function my(){
         $studies = $this->Study->find('all',array('order'=>'Study.date desc,Study.id desc')) or array();
         $this->set('title_for_layout','Top');
         $this->set('studies',$studies);

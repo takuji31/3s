@@ -5,7 +5,7 @@ class DATABASE_CONFIG {
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'config',
+		'login' => 'study',
 		'password' => '',
 		'database' => 'study',
 		'encoding' => 'utf8'
