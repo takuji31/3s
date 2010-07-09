@@ -10,8 +10,8 @@
 <meta name="copyright" content="&copy; 2010 Senchan all rights reserved" />
 <meta name="description" content="Senchan.jp" />
 <title><?= $title_for_layout ?><?if(!empty($title_for_layout)) print" | "; ?> Study Slide System |Senchan.jp</title>
-<?= $html->css("main") ?>
 <?= $html->css("reset") ?>
+<?= $html->css("main") ?>
 <? if(isset($javascript)){
     echo $javascript->link("jquery")."\n";
     echo $javascript->link("main")."\n";
