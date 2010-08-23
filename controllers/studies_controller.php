@@ -2,7 +2,7 @@
 class StudiesController extends AppController {
 
 	public $name = 'Studies';
-    public $helpers = array('Html','Form','Javascript','Text');
+    public $helpers = array('Html','Form','Javascript','Text','Session');
     public $components = array('Auth');
 
     public function beforeFilter(){

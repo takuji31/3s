@@ -48,3 +48,8 @@
  * Inflector::rules('plural', array('rules' => array(), 'irregular' => array(), 'uninflected' => array()));
  *
  */
+
+$subdomain = substr( env("HTTP_HOST"), 0, strpos(env("HTTP_HOST"), ".") );
+if( $subdomain == 'admin' ) {
+        $_GET["url"] = "admin/". (isset($_GET["url"]) ? $_GET["url"] : "");
+}
