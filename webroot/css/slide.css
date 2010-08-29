@@ -43,7 +43,7 @@ img {
 #main_content{
 	width:940px;
 	padding: 5px;
-	height:450px;
+	min-height:450px;
     overflow:auto;
     line-height : 100%;
     
@@ -98,7 +98,13 @@ div#main_content ol li{
 	list-style:inside decimal;
 }
 
-/* Start main content */
+div#main_content pre {
+    font-size:80%;
+    padding: 20px 10px;
+    margin: 20px;
+}
+
+/* End main content */
 
 
 /* Start footer */

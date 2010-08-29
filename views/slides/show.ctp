@@ -5,8 +5,11 @@
     <title> <?= $slide['title'] ?> | <?= $study['name'] ?> | Study</title>
     <link media="all" rel="stylesheet" href="/css/reset.css" type="text/css" />
     <link media="all" rel="stylesheet" href="/css/slide.css" type="text/css" />
-    <?= $html->css('/syntax/css/prettify') ?>
-    <?= $javascript->link('/syntax/js/prettify') ?>
+    <?= $html->css('prettify') ?>
+    <?= $javascript->link('jquery') ?>
+    <?= $javascript->link('jquery.hotkeys-0.7.9.min.js') ?>
+    <?= $javascript->link('prettify') ?>
+    <?= $javascript->link('slide') ?>
 </head>
 <body>
     <div id="wrapper">

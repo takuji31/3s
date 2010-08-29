@@ -4,6 +4,7 @@ class SlidesController extends AppController {
 	public $name = 'Slides';
     public $helpers = array('Html','Form','Javascript','Senchan.Hatena');
     public $uses = array('Study','Slide');
+    public $components = array('Auth');
     public $paginate = array(
             'limit' => 1,
             'order' => array(
