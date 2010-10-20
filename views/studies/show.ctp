@@ -18,7 +18,7 @@ Slides
     <tr>
         <td><?= $slide['page'] ?> </td>
         <td><?= $slide['title'] ?> </td>
-        <td><?= $text->truncate($slide['body'],40,array('ending'=>'...')) ?> </td>
+        <td><?= strip_tags($text->truncate($slide['body'],40,array('ending'=>'...'))) ?> </td>
         <td><?= $html->link('Edit','/slides/edit/'.$slide['rid']) ?> </td>
     </tr>
     <? }
