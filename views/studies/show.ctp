@@ -4,7 +4,8 @@
 Slides
 <br />
 <?= $html->link('Add','/slides/add/'.$study['rid']) ?><br />
-<?= $html->link('Start','/slides/show/'.$study['rid'],array('class'=>'blank')) ?>
+<?= $html->link('Start','/slides/show/'.$study['rid'],array('class'=>'blank')) ?><br />
+<?= $html->link('Start All','/slides/all/'.$study['rid'],array('class'=>'blank')) ?><br />
 
 
 <table>

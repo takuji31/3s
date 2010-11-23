@@ -59,6 +59,17 @@ class SlidesController extends AppController {
         }
 
     }
+    public function all($study_rid=null){
+        $this->layout = false;
+
+        $study = $this->Study->find('first',array('conditions' => array('Study.rid'=>$study_rid)));
+        //データなかったらリダイレクト
+        if(!$study_rid || !$study){
+            $this->redirect('/');
+        }
+        $this->set('study',$study['Study']);
+        $this->set('slides',$study['Slide']);
+    }
 
 }
 ?>

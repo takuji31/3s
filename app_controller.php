@@ -33,7 +33,7 @@
 class AppController extends Controller {
     public $menu = false;
     public $helpers = array('Html','Form','Javascript');
-    public $components = array('Session','DebugKit.Toolbar');
+    public $components = array('Session');
     public function beforeFilter(){
         $prefix = @$this->params['prefix'];
         if($prefix == 'admin'){
